@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <main>
+            <form action="submit.php" method="POST">
+                <fieldset>
+                    <legend>Form</legend>
+
+                    <label>Name:
+                        <input type="text" required>
+                    </label> 
+                    <fieldset>
+                        <legend>Age</legend>
+                        <label>
+                            <input type="radio" name="age" value="&lt;18" />&lt;18
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="19-35" />19-35
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="36-48" />36-48
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="&gt;49" />&gt;49
+                        </label>
+                    </fieldset>
+                    <label>Profession:
+                        <input name="profession" list="professions" value="Pentester" />
+                        <datalist id="professions">
+                            <option>Computer Scientist</option>
+                            <option>Web Developer</option>
+                            <option>Pentester</option>
+                            <option>Networking Engineer</option>
+                        </datalist>
+                    </label>
+                    <label>Country:
+                        <select name="country">
+                            <optgroup label="Europe">
+                                <option value="portugal">Portugal</option>
+                                <option value="spain">Spain</option>
+                                <option value="germany">Germany</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="canada">Canada</option>
+                                <option value="united-states">United States</option>
+                                <option value="barbados">Barbados</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="china">China</option>
+                                <option value="india">India</option>
+                                <option value="kazakhistan">Kazakhistan</option> 
+                            </optgroup>
+                        </select>
+                    </label>
+
+                    <fieldset>
+                        <legend>Interests:</legend>
+                        <label>
+                            <input type="checkbox" name="interest" id="programming" />Programming
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" id="reading" />Reading
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" id="running" />Running
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" id="learning" />Learning
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" id="infosec" />Infosec
+                        </label>
+                    </fieldset>
+                    <label>How did you find out about this website:
+                        <textarea name="user-answer" cols="50" rows="5"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Send">
+            </form>
+        </main>
+    </body>
+</html>
