@@ -1,0 +1,157 @@
+/* Navbar */
+
+header img {
+    height: 60px;
+    margin-left: 40px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0, .5, 0, 1) 0.5s;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    background-size: 100% 2px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* form */
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding: 10px;
+    border: none;
+    background-color: hsl(231, 48%, 48%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form {
+    border: 1.5px solid black;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+div#main-form {
+    display: block;
+    text-align: center;
+    margin-top: 10em;
+}
+
+main form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body {
+    font-family: 'Lora', serif;
+    height: 125vh;
+    background-size: cover;
+    margin-top: 80px;
+    padding: 2em;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+table {
+    border: 1px solid hsl(0, 0%, 50%);
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background: (0, 0%, 40%);
+}
+
+
+#warning {
+    font-size: x-large;
+    text-align: center;
+    color: red;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+#warning span{
+    color: hsl(300, 100%, 20%);
+}
+
+
+td {
+    text-align: center;
+}
+
+th, td {
+    padding: 1em;
+    text-align: center;
+}
+
+th {
+    background: hsl(0, 0%, 30%);
+}
+
+tr:nth-child(odd) {
+    background: hsl(0, 0%, 80%);
+}
+
+tr:hover {
+    background: hsl(0, 0%, 50%);
+}
+
+#my-table {
+    overflow-x: auto;
+}
