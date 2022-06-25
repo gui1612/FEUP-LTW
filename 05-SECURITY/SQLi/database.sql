@@ -1,0 +1,9 @@
+CREATE TABLE users (
+  username VARCHAR PRIMARY KEY,
+  password VARCHAR NOT NULL
+);
+
+INSERT INTO users VALUES ('johndoe', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220');
+INSERT INTO users VALUES ('janedoe', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8');
+INSERT INTO users VALUES ('marydoe', '7c4a8d09ca3762af61e59520943dc26494f8941b');
+INSERT INTO users VALUES ('jackdoe', '7c4a8d09ca3762af61e59520943dc26494f8941b');

@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  justify-content: center;
+}
+
+body > form {
+  display: grid;
+  width: 30em;
+  gap: 1em;
+}
+
+section#comments article {
+  margin: 1em 0;
+}
+
+section#comments article {
+  background-color: #cfe2e9;
+  padding: 1em;
+}
